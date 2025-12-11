@@ -28,8 +28,8 @@ jobs:
           echo "Build créé automatiquement" > dist/output.txt
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: build-files
-          path: dist/
+        uses: actions/upload-artifact@v4
+            with:
+               name: build-files
+               path: dist/
 
